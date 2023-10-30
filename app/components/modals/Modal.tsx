@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
+import Button from "../Button";
+
 interface ModalProps {
   isOpen?: boolean;
   onClose: () => void;
@@ -91,7 +93,7 @@ const Modal: React.FC<ModalProps> = ({
               {/* FOOTER */}
               <div className="flex flex-col gap-2 p-6">
                 <div className="flex flex-row items-center gap-4 w-full">
-                    <Button />
+                  <Button outline label="My Button" />
                 </div>
               </div>
             </div>
